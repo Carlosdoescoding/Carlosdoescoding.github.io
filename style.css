@@ -150,6 +150,7 @@ html, body {
   
     .supporting .col {
       width: 100%;
+      height: 50px;
     }
   }
   .outro{
