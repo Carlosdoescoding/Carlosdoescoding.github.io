@@ -1,64 +1,226 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Websites explained</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- The following is javascript used to search for specific elements within HTML or CSS. VERY IMPORTANT TO KEEP FOR FUTURE TABLE DATA   
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<!-- THIS CODE ALLOWS MY SEARCH FUNCTION TO FUNCTION LOL  <input class="search-text" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for elements.." title="Type in a name"> -->
+  <div class="HTML">
+     <h1><strong>Website</strong> Design system</h1>
+     <p class="introtext">This site is here to support you on your journey to becoming a front-end developer!</p>
+  </div>
+
+  <div class="box">
+
+    <h2><strong>CSS Box Model explained</strong></h2>
+    <p class="explain">In CSS, the term "box model" is used when talking about design and layout.The CSS box model is essentially a box that wraps around every HTML element. <br>It consists of the following: content, padding, borders and margins. The image below illustrates the box model.</p>
+    <div class="margin">
+      Margin
+      <div class="border">
+        Border
+        <div class="padding">
+          Padding
+          <div class="content">
+            Content
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="explainul">
+      <li>Content</li><p class="explainp">The content of the box, where text and images appear.</p>
+      <li>Border</li><p class="explainp">Clears an area around the content. The padding is transparent.</p>
+      <li>Padding</li><p class="explainp">A border that goes around the padding and content.</p>
+      <li>Content</li><p class="explainp">Clears an area outside the border. The margin is transparent.</p>
+    </ul>
+
+    <div class="example">
+    Example: The following is what would be required in CSS to have the effect desired.
+    <div class="examplecontent">
+      div { <br>
+      width: 300px;<br>
+      border: 15px solid green;<br>
+      padding: 50px;<br>
+      margin: 20px;<br>
+      }
+    
+    </div>
+    </div>
+    <h2><strong>Display and Position</strong></h2>
+    <p class="explain">There are several CSS properties that can help you with the positioning of HTML elements. 
+ 
+    <ul class="explainul">
+      <li>Display</li><p class="explainp">Specifies the type of box used for an HTML element.</p>
+      <li>Position</li><p class="explainp">Specifies the type of positioning method used for an HTML element.</p>
+      <li>Float</li><p class="explainp">Specifies whether an element should float to the left, right, or none.</p>
+      <li>Clear</li><p class="explainp">Specifies what elements can float beside the cleared element and on which side.</p>
+      <br> <div class="description">The image below demonstrates how display and positioning works</div>
+    </ul>
+
+    <div class="images">
+    <img class="images" src="https://jorgeortega618.github.io/websitedesingsystem/assets/csspositioning.png" alt="An image that explains how positioning works in CSS" width="800px" height="500px">
+
+    </div>
+    </div>
+
+    <div class="example">
+      Example: The following is what would be required in CSS to have the effect desired.
+      <div class="examplecontent">
+        div { <br>
+        display: inline-block;<br>
+        position: relative;<br>
+        float: left;<br>
+        margiclear: right;<br>
+        }
+      
+      </div>
+
+    </div>
+
+      
+ 
+    <div class="box">
+
+      <h2><strong>Colors</strong></h2>
+      <p class="explain">Colors are specified using predefined color names, RGB, HEX, HSL, RGBA, and HSLA values. The most common ways to specify colors are:
+      <ul>
+        <li class="colornames">By color names</li>
+        <li class="colornames">By HEX value</li>
+        <li class="colornames">By RGB value</li>
+        <li class="colornames">By RGBA value</li>
+        <li class="colornames">By HSL value</li>
+        <li class="colornames">By HSLA value</li>
+      </ul>
+       <div class="colordefinition">
+        Color Names
+        Colors can be specified by using a color name. For example, "red", "blue", "green", etc.<br><br>
+        
+        HEX Value
+        Colors can be specified using a HEX value. For example, "#ff0000" is displayed as red.<br><br>
+        
+        RGB Value
+        Colors can be specified using an RGB value. For example, "rgb(255,0,0)" is displayed as red.<br><br>
+        
+        RGBA Value
+        Colors can be specified using an RGBA value. For example, "rgba(255,0,0,0.3)" is displayed as red with 30% opacity.<br><br>
+        
+        HSL Value
+        Colors can be specified using an HSL value. For example, "hsl(0,100%,50%)" is displayed as red.<br><br>
+        
+        HSLA Value
+        Colors can be specified using an HSLA value. For example, "hsla(0,100%,50%,0.3)" is displayed as red with 30% opacity.<br><br>
+        
+       
+      </div>
+
+      <div class="example">
+        Example:  Demonstration of the color properties:.
+        <div class="examplecontent">
+          div { <br>
+          background-color: red;<br>
+          color: #ffffff;<br>
+          border-color: rgb(255,0,0);<br>
+          }
+        
+        </div>
   
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet' type='text/css'/>
-  </head>
+        </div>
+        <div>
+        <h2><strong>Color Palette</strong></h2>
+        <ul class="explainul">
+        <li class="blue">.bg-primary #0d6efd</li><p class="blueb">Clears an area around the content. The padding is transparent.</p>
+        <li class="gray">.bg-secondary #6c757d</li><p class="grayb">Clears an area around the content. The padding is transparent.</p>
+        <li class="green">.bg-success #198754</li><p class="greenb">Clears an area around the content. The padding is transparent.</p>
+        <li class="red">.bg-danger #dc3545 </li><p class="redb">Clears an area around the content. The padding is transparent.</p>
+        <li class="yellow">.bg-warning #ffc107</li><p class="yellowb">Clears an area around the content. The padding is transparent.</p>
+        <li class="info">.bg-info #0dcaf0</li><p class="infob">Clears an area around the content. The padding is transparent.</p>
+        <li class="lightblue">.bg-light #f8f9fa</li><p class="lightblueb">Clears an area around the content. The padding is transparent.</p>
+        <li class="darkgray">.bg-dark #212529</li><p class="darkgrayb">Clears an area around the content. The padding is transparent.</p>
+        <li class="white">.bg-white #ffffff</li><p class="whiteb">Clears an area around the content. The padding is transparent.</p>
+        </ul>
+        </div>
 
-  <body>
-    
-    <header class="intro">
-        <nav>
-          <ul>
-            <li><button class="button" About me></li> <li> Projects </li> <li> Contact </li>
+        <div>
+          <h2><strong>Typography</strong></h2>
+          <ul class="explainul">
+          <li>font-family</li><p class="explainp">Specifies the font family for text.</p>
+          <li>font-size</li><p class="explainp">Specifies the font size for text.</p>
+          <li>font-style</li><p class="explainp">Specifies the font style for text.</p>
+          <li>font-weight</li><p class="explainp">Specifies the font weight for text.</p>
+          <li>text-align</li><p class="explainp">Specifies the horizontal alignment of text.</p>
+          <li>text-decoration</li><p class="explainp">Specifies the decoration added to text.</p>
+          <li>text-transform</li><p class="explainp">Specifies the capitalization of text.</p>
+          <li>line-height</li><p class="explainp">Specifies the line height.</p>
+          <li>letter-spacing</li><p class="explainp">Specifies the space between characters.</p>
+          <li>word-spacing</li><p class="explainp">Specifies the space between words.</p>
           </ul>
-        </nav>
-    </header>
+          
+          <div class="example">
+            Example: Demonstration of the typography properties:
+            <div class="examplecontent">
+                         
+            p { <br>
+              font-family: Arial, sans-serif;<br>
+              font-size: 16px;<br>
+              font-style: italic;<br>
+              font-weight: bold;<br>
+              text-align: center;<br>
+              text-decoration: underline;<br>
+              text-transform: uppercase;<br>
+              line-height: 1.5;<br>
+              letter-spacing: 2px;<br>
+              word-spacing: 5px;<br>
+            }
+            
+            
+            </div>
+          
+        </div>
+  
 
-    <main>
-      <div class="jumbotron">
-        <div class="container">  
-          <h1>My portfolio</h1>
-          <a href="#" class="btn-main"> Learn more below! </a>
-        </div>
-      </div>
-    </main>
 
-    <section class="supporting">
-      <div class="container">
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/design.svg">
-          <h2>Design</h2>
-          <p>Look at my templates I've designed using HTML5/CSS</p>
-          <a href="#"> Learn More</a><br>
-        </div>
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/develop.svg">
-          <h2>Develop</h2>
-          <p>Learn what I've developed</p>
-          <a href="#"> Learn More</a><br>
-        </div>
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/deploy.svg">
-          <h2>Deploy</h2>
-          <p>Learn what APPS, software and websites I have deployed</p>
-          <a href="#"> Learn More</a><br>
-        </div>
-        
-      </div>
-    </section>
 
-    <footer class="outro">
-      <div class="container">
-        <p>&copy; Carlos Haua</p>
+
+
+
+
+
+
+
+
+
+<div class="foot">
+        <footer>
+          <h3>Thanks for visiting! <br>
+            &#169;Carlos Haua</h3>
+        </footer>    
+        
       </div>
-    </footer>
-    
-    
-  </body>
+</body>
 </html>
-
